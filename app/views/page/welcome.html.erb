@@ -1,0 +1,18 @@
+
+<div class="home-banner" data-stretch="<%= image_url "home-banner-bg.jpg" %>">
+  <div class="banner-inner container clearfix">
+    <h1>It's Party Time!</h1>
+    <p class="subheading">Come together, have a enjoyable talk</p>
+    <div class="home-banner-links">
+      <%= link_to "Publish New Event", "/issues/new", class: "banner-btn btn" %>
+    </div>
+  </div>
+</div>
+<div class="issue-list-header">
+  <div class="container clearfix">
+    <h1 class="issue-list-heading">All the Events List...</h1>
+  </div>
+</div>
+<div class="container clearfix">
+  <%= render partial: 'issue_list', locals: { issues: @issues } %>
+</div>
